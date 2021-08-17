@@ -163,65 +163,55 @@ body {
     height: 100px;
     background: #ff0000;
 }
+ img {
+  
+  width: 300px;
+  height: 300px;
+  margin-top: -30px;
+ }
 
-#resume {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  text-align: center;
-  justify-content: center;
+.sitebody {
+ background: url('../img/background_image.jpg');
+ padding: 5px 20px 20px 20px;
 }
-
-#resume img{
+h1 {
+  text-align: center;
+}
+.flexdiv {
+  display: flex;
+}
+.imagediv {
+  margin: 30px ;
+}
+#resume img {
+  border-style: solid;
+  border-radius: 150px;
+  border-color: black;
+}
+#resume_eng img {
+  border-style: solid;
+  border-radius: 150px;
+  border-color: black;
+}
+.imagediv img{
   align-self: center;
-  width: 150px;
-  height: 150px;
   object-fit: contain;
 }
-#resume h1{
-  align-self: center;
-}
 
-#resume p{
-  align-self: center;
+.skills {
+  padding-right: 50px;
+  margin: 0px 30px 0px 30px;
 }
-
-#resume_eng {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  text-align: center;
-  justify-content: center;
+.skills p {
+  padding-left: 20px;
 }
-
-#resume_eng img{
-  align-self: center;
-  width: 150px;
-  height: 150px;
-  object-fit: contain;
-}
-#resume_eng h1{
-  align-self: center;
-}
-
-#resume_eng p{
-  align-self: center;
+.aboutme{
+  margin:; 30px;
 }
 
 
 
-#bio {
-  display: flex;
-  flex-wrap: wrap;
-  text-align: center;
-  justify-content: center;
-}
-#hobby{
-  display: flex;
-  flex-wrap: wrap;
-  text-align: center;
-  justify-content: center;
-}
+
 
 #taskjs {
   display: flex;
@@ -535,15 +525,8 @@ input:focus{
 #footer {
   text-align: center;
   width: 100%;
+  padding: 10px;  
   background: #25373d;
 }
-
-#footer img{
-  width: 10%;
-  height: 50%;
-  object-fit: contain;
-}
-
-
 
 

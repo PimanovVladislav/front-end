@@ -1,12 +1,13 @@
-$("#form1").on("submit", function(){
-    let mobphone = $('#mobphone').val();
+$("#form1").submit(function(event){
+	event.preventDefault();
 	$.ajax({
-		url: 'scripts/details.php',
+		url: 'js/details.php',
 		method: 'post',
-		data: {mphone:mobphone},
-		success: function(result){
-            $("#name").html(result['name']);
-            $("#surname").html(result['surname']);
+		data: new FormData(this),
+		processData: false,
+        contentType: false,
+		success: function(result) {
+			$('#weight').html(result+' кг.')
 		}
 	});
 });

@@ -10,7 +10,7 @@ function zero_first_format(value)
 function date_time()
 {
   let current_time = new Date();
-  let month = zero_first_format(current_time.getMonth());
+  let month = zero_first_format(current_time.getMonth()+1);
   let day = zero_first_format(current_time.getDate());
   let year = current_time.getFullYear();
   let hours = zero_first_format(current_time.getHours());
